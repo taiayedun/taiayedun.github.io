@@ -293,12 +293,7 @@ You can adjust the min-width numbers below, and add as many new media queries as
         padding: 20px;
         background-color: lightblue;
     }
-    
-    nav{
-      display:flex;
-      flex-wrap:wrap;
-      justify-content: space-between;
-   }
+
   
     nav section{
       flex:0 1 32%;
