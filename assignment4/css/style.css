@@ -26,7 +26,7 @@ html {
     line-height: 1.4em;
 }
 
-nav{
+ nav{
     position:fixed;
     top:0;
     width:100%;
@@ -71,7 +71,7 @@ a:hover {
   }
 
 header{
-    padding-top: 175px;
+    padding-top: 50px;
     margin: 15px 30px;
   }
 
@@ -82,17 +82,34 @@ body {
     background-color:  whitesmoke;
 }
 
+.container {
+	font-family: "Xanh Mono", monospace;
+  margin:auto;
+    
+}
+
+main{
+    padding: 15px 30px;
+    margin: auto;
+    width:100%;
+}
+
+p{
+    color:black;
+    padding:20px;
+}
+
 .container2 {
     position: absolute;
     left: 50%;
     top: 30%;
     transform: translate(-50%, -50%);
+    padding-top: 1400px;
   
     display: flex;
-    gap: 1rem;
+    gap: 6rem;
   }
   
-
  .container2 img{
     width:50px;
     height:50px;
@@ -100,45 +117,37 @@ body {
   }
 
 @keyframes looping {
-    to {
-      transform: translateY(-200%) scale(1);
-    }
-
-    0%,25% {
-        transform: translateY(100%, 0);
-        background-color:  #000000;
-        animation-delay: 0s;
-    }
+ from {
+    transform: translateY(-200%) scale(1);
     
-    
-    75%, 100% {
-        transform: translateY(1000%, 0); 
-        background-color: #000000;
-        animation-delay: 3s;
-    } 
-   
+  }
+  to {
+    transform: translateY(100%) scale(3);
+ 
+  } 
+  
   }
   
   #boxa {
     background-color: #C3E0E5;
-    animation-delay: 0s;
+    animation-delay: 60s;
     border-radius: 25px;
     width: 50px;
     height: 50px;
 
-    animation: looping 1s infinite ease;
+    animation: looping 2s infinite ease;
     animation-iteration-count: infinite;
     animation-direction: alternate;
   }
 
   #boxb {
     background-color: #5885AF;
-    animation-delay: .125s;
+    animation-delay: 60s;
     border-radius: 25px;
     width: 50px;
     height: 50px;
 
-    animation: looping 1s infinite ease;
+    animation: looping 1.9s infinite ease;
     animation-iteration-count: infinite;
     animation-direction: alternate;
     
@@ -146,12 +155,12 @@ body {
 
   #boxc {
     background-color: #41729f;
-    animation-delay: .25s;
+    animation-delay: 60s;
     border-radius: 25px;
     width: 50px;
     height: 50px;
     
-    animation: looping 1s infinite ease;
+    animation: looping 1.8s infinite ease;
     animation-iteration-count: infinite;
     animation-direction: alternate;
    
@@ -159,12 +168,12 @@ body {
 
   #boxd {
     background-color: #274472;
-    animation-delay: .325s;
+    animation-delay: 60s;
     border-radius: 25px;
     width: 50px;
     height: 50px;
    
-    animation: looping 1s infinite ease;
+    animation: looping 1.7s infinite ease;
     animation-iteration-count: infinite;
     animation-direction: alternate;
    
@@ -172,12 +181,12 @@ body {
 
   #boxe {
     color: #10264a;
-    animation-delay: .5s;
+    animation-delay: 60s;
     border-radius: 25px;
     width: 50px;
     height: 50px;
     
-    animation: looping 1s infinite ease;
+    animation: looping 1.6s infinite ease;
     animation-iteration-count: infinite;
     animation-direction: alternate;
   }
@@ -195,8 +204,11 @@ div#whatever:hover {
         
         */
 
+
+
 figure img{
     width:100%;
+    padding-top: 175px;
     margin:auto;
 }
 
@@ -206,22 +218,7 @@ footer{
     background-color: #ccc;
 }
 
-#container {
-	font-family: "Xanh Mono", monospace;
-    margin:auto;
-    
-}
 
-main{
-    padding: 15px 30px;
-    margin: auto;
-    width:100%;
-}
-
-p{
-    color:black;
-    padding:20px;
-}
 
 /* Mobile First CSS: we'll design for phone sizes first, then add media queries for tablets and desktop computers later */
 
