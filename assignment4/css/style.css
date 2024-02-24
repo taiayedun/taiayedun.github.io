@@ -23,10 +23,10 @@ html, body {
 html {
 		/* Standard text-settings below */
 	font-size: 1em;
-    line-height: 1.4em;
+  line-height: 1.4em;
 }
 
- nav{
+nav{
     position:fixed;
     top:0;
     width:100%;
@@ -46,17 +46,7 @@ nav li{
     line-height: 60px;
 }
 
-
-h1{
-    text-align: center;
-    padding:15px;
-}
-
-h2{
-    padding-top:45px;
-}
-
-a{
+nav a{
     color:black;
     padding:10px;
     font-family: "Xanh Mono", monospace;
@@ -64,22 +54,33 @@ a{
     border-radius: 10%;
 }
 
-a:hover {
+nav a:hover {
     color: whitesmoke;
     background-color:black;
     opacity: 70%;
   }
 
 header{
-    padding-top: 50px;
+    padding-top: 200px;
     margin: 15px 30px;
   }
+
+h1{
+    text-align: center;
+    padding:15px;
+    font-family: "Xanh Mono", monospace;
+}
+
+h2{
+    padding-top:45px;
+    font-family: "Xanh Mono", monospace;
+}
 
 /* Mobile First CSS: we'll design for phone sizes first, then add media queries for tablets and desktop computers later */
 
 body {
 	margin: auto;
-    background-color:  whitesmoke;
+  background-color:  whitesmoke;
 }
 
 .container {
@@ -104,7 +105,7 @@ p{
     left: 50%;
     top: 30%;
     transform: translate(-50%, -50%);
-    padding-top: 1400px;
+    
   
     display: flex;
     gap: 6rem;
@@ -123,7 +124,7 @@ p{
   }
   to {
     transform: translateY(100%) scale(3);
- 
+    
   } 
   
   }
@@ -191,24 +192,32 @@ p{
     animation-direction: alternate;
   }
 
+ 
+  @keyframes spin {
+      10% { transform: rotate(72deg) scale(1);}
+      20% { transform: rotate(144deg) scale(2);}
+      40% { transform: rotate(216deg) scale(3);}
+      50% { transform: rotate(288deg) scale(4);}
+      60% { transform: rotate(360deg) scale(1);}
+      70% { transform: rotate(-288deg) scale(4);}
+      80% { transform: rotate(-216deg) scale(3);}
+      90% { transform: rotate(-144deg) scale(2);}
+      100% {transform: rotate(-72deg) scale(1);}
+      
+    }
 
+figure img:hover{
+          width:100%;
+          margin:auto;
 
- /*
-div#whatever {
-        ...properties and values...
-        }
-        
-div#whatever:hover {
-        ...new properties and values...
-        } 
-        
-        */
-
+          animation: spin 1s infinite ease;
+          animation-iteration-count: infinite;
+          animation-direction: normal;
+      }
 
 
 figure img{
     width:100%;
-    padding-top: 175px;
     margin:auto;
 }
 
