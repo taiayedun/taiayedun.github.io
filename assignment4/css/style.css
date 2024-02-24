@@ -108,6 +108,12 @@ p{
     padding:20px;
 }
 
+.scroll h3{
+  color:black;
+  padding:20px;
+  text-align:center;
+}
+
 header p{
   color:black;
   padding:20px;
@@ -163,7 +169,7 @@ main p:hover{
 .container2 {
     position: absolute;
     left: 50%;
-    top: 100%;
+    top: 115%;
     padding:200px;
     transform: translate(-50%, -50%);
   
@@ -171,15 +177,10 @@ main p:hover{
     gap: 10rem;
   }
   
- .container2 img{
-    width:50px;
-    height:50px;
-    border-radius: 25px;
-  }
 
   #boxa {
     background-color: #C3E0E5;
-    animation-delay: 2s;
+    animation-delay: 0s;
     border-radius: 25px;
     width: 50px;
     height: 50px;
@@ -191,12 +192,12 @@ main p:hover{
 
   #boxb {
     background-color: #5885AF;
-    animation-delay: 2s;
+    animation-delay: .125s;
     border-radius: 25px;
     width: 50px;
     height: 50px; 
     
-    animation: looping 1s infinite ease;
+    animation: looping 1.1s infinite ease;
     animation-iteration-count: infinite;
     animation-direction: alternate;
     
@@ -204,36 +205,36 @@ main p:hover{
 
   #boxc {
     background-color: #41729f;
-    animation-delay: 2s;
+    animation-delay: .25s;
     border-radius: 25px;
     width: 50px;
     height: 50px;
 
-    animation: looping 1s infinite ease;
+    animation: looping 1.2s infinite ease;
     animation-iteration-count: infinite;
     animation-direction: alternate;
   }
 
   #boxd {
     background-color: #274472;
-    animation-delay: 2s;
+    animation-delay: .325s;
     border-radius: 25px;
     width: 50px;
     height: 50px;
    
-    animation: looping 1s infinite ease;
+    animation: looping 1.3s infinite ease;
     animation-iteration-count: infinite;
     animation-direction: alternate;
   }
 
   #boxe {
     background-color: #10264a;
-    animation-delay: 2s;
+    animation-delay: .5s;
     border-radius: 25px;
     width: 50px;
     height: 50px;
   
-    animation: looping 1s infinite ease;
+    animation: looping 1.4s infinite ease;
     animation-iteration-count: infinite;
     animation-direction: alternate;
   }
