@@ -7,93 +7,70 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;1,600&family=Tilt+Prism&display=swap" rel="stylesheet">
-    <!--Link JQuery-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
-    <link rel="stylesheet" href="../css/a5style.css">
-    <title>Document</title>
+<link rel="stylesheet" href="css/style.css">
+
+
+    <title>Assignment 5</title>
 </head>
 <body>
-    <script> 
-    
-    $(document).ready(function(){
-        $('figure#love1').hide();
-        $('figure#love2').hide();
-        $('figure#love3').hide();
-    
-        $('button#show1').click(function() {
-                $('figure#love1').show();
-
-            }); //show.click
-
-            $('button#hide1').click(function() {
-                $('figure#love1').hide();
-            }); 
-            $('button#show2,show3').click(function() {
-                $('figure#love2').show();
-
-            }); //show.click
-
-            $('button#hide2').click(function() {
-                $('figure#love2').hide();
-             });
-        $('button#show3').click(function() {
-                $('figure#love3').show();
-
-            }); //show.click
-
-           
-            $('button.hide').click(function() {
-                $('figure#love3').hide();
-            });
-            
-            $('button.hide').click(function() {
-                $('figure#love2').hide();
-            });
-            $('button.hide').click(function() {
-                $('figure#love1').hide();
-            });
-    });
-
-    </script>
      <header>
-            <h1>Nailz By Arey</h1>
-            <h2>Nail art by me. Everything is hand made by me. Enjoy!!! </h2>
-        </header>
-        <div id="hide">
-            <button class="hide">Hide All</button>
-            </div>
+            <h1>Cloud Gate</h1>
+    </header>
+<main>
+            <h2> Calling all cloud, moon, sun, and sky lovers</h2>
+            <p> Hey, you ever looked up at the sky and been like, "Whoa, the moon is so pretty" Sometimes it's a cresent or looks like someone took a bite out of it. And what about the clouds? They are as equally beautiful as the moon. sometimes its like they are playing peek-a-boo with the moon. Who doesn't love looking at the the moon, stars and clouds because I could look at them for hours</p>
 
-        <main class="fake">
+<div class="section">
+    <h2>Calming Sky Heaven</h2>
+  </div>
+
+    <div id="section1">
+      <img src="img/IMG_6373.jpeg" alt="">
+    <p> Cloud watching! Tell me what shapes or objects do you see? I see an airplane</p>
+    </div>
+  
+    <div class="section-column">
+    <div id="section2">
+    <p>Cloud watching! Tell me what shapes or objects do you see? I see shrimp, maybe its because I'm hungry lol</p>
+    <img src="img/IMG_5810.jpeg" alt="">
+    </div>
+
+    <div id="section3">
+    <img src="img/IMG_6169.JPG" alt="">
+    <p>Cloud watching! Tell me what shapes or objects do you see? I see an aligator</p>
+    </div>
+
+  </div>
+
+  <p>if you want chaos, click the button below! </p>
+  <button type="button">Chaos!</button>
+  
+        
+</main>
+
+
+        <footer>
     
-            <div class="box">
-                <div class="wrapper wrapper2">
-              <figure id="love1">
-                <img  src="../img/val1.jpg" alt="" srcset=""> 
-                <figcaption>Ice Cold</figcaption>
-              </figure>  
-               <button id="show1">Show</button> 
-             </div>
-            <div class="wrapper wrapper2">
-                   
-              
-              <figure id="love2">
-                <img src="../img/marble.jpg" alt="" srcset=""> 
-                <figcaption>Brown Marble</figcaption>
-              </figure> 
-              <button id="show2">Show</button>
-            </div>
-            <div class="wrapper wrapper3">
-                  
-                <figure id="love3">
-                  <img src="../img/val2.jpg" alt="" srcset=""> 
-                  <figcaption></figcaption>
-                </figure> 
-                <button id="show3">Show</button> 
-            </div>
-            
-            </div>
-           
-        </main>
-       
+            <p>&#169; Taiwo Ayedun, 2024</p> 
+        </footer>
+
+ <!-- Link to jQuery on Google CDN-->
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  
+  
+ <!-- Write your jQuery code inside of the .ready() function below -->
+ <script>
+$(document).ready(function() {
+  $("button").click(function(){
+    $("#section1").fadeIn();
+    $("#section2").fadeIn("slow");
+    $("#section3").fadeIn(3000);
+  });
+
+
+}); //close .ready()
+</script>
+
+
 </body>
 </html>

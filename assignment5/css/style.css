@@ -3,6 +3,8 @@ html, body {
 	margin:0px;
 	padding:0px;
 	height:100%;
+    background-color: snow;
+    box-sizing: border-box;
 }
 
 html {
@@ -11,72 +13,137 @@ html {
     line-height: 1.4em;
 }
 
+header{
+    background-color: slategrey;
+    height:100px;
+}
 
 
 
 /* Mobile First CSS: we'll design for phone sizes first, then add media queries for tablets and desktop computers later */
 
 h1{
-    background-color: antiquewhite;
-    margin: 0px;
-    padding: 3%;
+    margin: auto;
+    padding:35px;
     display: flex;
     justify-content: center;
     font-family: 'Tilt Prism', cursive;
-    font-size: 4vw;
 }
+
 h2{
-    font-size: 2vw;
+    display: flex;
+    padding-top:20px;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+p{
+    margin:auto;
+    padding:30px;
+    text-align: center;
     display: flex;
     justify-content: center;
     font-family: 'Poppins', sans-serif;
 }
-.wrapper {
-   padding-right: 3vw;
-    text-align: center;
-    color: #e5eaf5;
-  }
-  .box {
-    display: flex;
-    flex-direction: row;
-  background-color: white;
-  }
-  .as3{
-    background-color: white;
-  }
-  img{
-    width:20vw;
-  }
-  figure{
-    background-color: #333;
-    padding: 2vw;
 
-  }
-  button{
-    margin-bottom: 20px;
-background-color: bisque;
-display: flex;
-justify-content: center;
-font-family: 'Poppins', sans-serif;
-font-weight: bold;
-font-size: 1.5vw;
-  }
-.fake{
-display: flex;
-align-items: center;
-justify-content: center;
-}
-.hide{
-    background-color: aquamarine;
-    display: flex;
-
-}
-#hide{
+.section h2{
     display: flex;
     justify-content: center;
-    padding-top: 2vw;
+    font-family: 'Poppins', sans-serif;
 }
 
+.section{
+    background-color: lavender;
+    justify-content: center;
+    padding-bottom: 5px;
+    margin:5%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#section1 {
+    margin: 5%;
+    text-align: center;
+    padding: 20px;
+    display:flex;
+    flex-direction: row;
+}
+
+
+.section-column {
+    margin: auto;
+    padding: 20px;
+    display:flex;
+    flex-direction: row;
+}
+
+#section2 {
+    margin: auto;
+    width: 400px;
+    padding: 20px;
+    display:flex;
+    flex-direction: column;
+    justify-content: left;
+}
+
+#section3 {
+    margin: auto;
+    width: 400px;
+    padding: 20px;
+    display:flex;
+    flex-direction: column;
+    justify-content: right;
+}
+
+img {
+    width: 400px;
+    height: auto;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#section2 img {
+    width: 400px;
+    height:400px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#section3 img {
+    width: 400px;
+    height:400px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+footer{
+    text-align:center;
+    padding: 20px;
+    background-color: slategrey;
+}
+
+
+button{
+margin-left: 45%;
+margin-bottom:30px;
+background-color: lavender;
+text-align: center;
+font-family: 'Poppins', sans-serif;
+font-weight: bold;
+}
+
+button:hover{
+    margin-left: 45%;
+    margin-bottom:30px;
+    background-color: red;
+    color: beige;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    }
 
 
 
@@ -107,7 +174,7 @@ hr {
     display: block;
     height: 1px;
     border: 0px;
-    border-top: 1px solid #ccc;
+    border-top: 5px solid lavender;
     margin: 1em 0px;
     padding: 0px;
 }
