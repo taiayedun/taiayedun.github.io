@@ -42,8 +42,9 @@
 
   </div>
 
-  <p>if you want chaos, click the button below! </p>
-  <button type="button">Chaos!</button>
+
+  <p id="target">if you want chaos, click the button below! </p>
+  <button id="button">Chaos!</button>
   
         
 </main>
@@ -61,12 +62,24 @@
  <!-- Write your jQuery code inside of the .ready() function below -->
  <script>
 $(document).ready(function() {
-  $("button").click(function(){
-    $("#section1").fadeIn();
-    $("#section2").fadeIn("slow");
-    $("#section3").fadeIn(3000);
-  });
 
+  $('#button').click(function() {
+      $('#target').css('background-color', getRandomColor());
+      $('#section1').css('background-color', getRandomColor());
+      $('#section2').css('background-color', getRandomColor());
+      $('#section3').css('background-color', getRandomColor());
+      $('.section-column').css('background-color', getRandomColor());
+      $('.section').css('background-color', getRandomColor());
+    });
+
+    function getRandomColor() {
+      var letters = '0123456789ABCDEF';
+      var color = '#';
+      for (var i = 0; i < 6; i++) {
+        color += letters[Math.floor(Math.random() * 16)];
+      }
+      return color;
+    } 
 
 }); //close .ready()
 </script>
