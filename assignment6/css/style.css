@@ -1,0 +1,136 @@
+/* Basic CSS resets -- leveling slight inconsistencies in browsers */
+html, body {
+	margin:0px;
+	padding:0px;
+	height:100%;
+}
+
+html {
+		/* Standard text-settings below */
+	font-size: 1em;
+    line-height: 1.4em;
+}
+
+
+
+
+/* "Mobile first" CSS: we'll design for phone sizes first, then add media queries for tablets and desktop computers later */
+
+body {
+	margin:auto;
+	
+}
+
+
+#container {
+	height:100%;
+}
+
+header h1{
+	text-align: center;
+	padding: 10px;
+	line-height: 30px;
+
+}
+
+header, section {
+	background:lightgray;
+	padding:25px;
+	color:black;
+}
+
+img{
+	max-height:700px;
+}
+
+p{
+	background-color: lightskyblue;
+	padding:20px;
+	border-radius: 5%;
+}
+
+
+#sky1, #sky2, #sky3 {
+	/*height:700px;*/
+	height:100%;
+	display: flex;
+}
+
+
+#sky1 {
+	background:url('/assignment6/img/IMG_6838.jpeg') fixed center no-repeat;
+	background-size:cover;
+
+}
+
+#sky2 {
+	background:url('/assignment6/img/IMG_4014.JPG') fixed center no-repeat;
+	background-size:cover;
+	
+	position:relative;
+}
+
+#sky3 {
+	background:url('/assignment6/img/IMG_6875.jpeg') fixed center no-repeat;
+	background-size:cover;
+}
+
+
+
+
+
+#sky2 h1 {
+	color:white;
+	font-size:140px;
+	line-height:140px;
+	position:absolute;
+	display: flex;
+	left:50%;
+	top:50%;
+	margin-left:-182px;
+	margin-top:-70px;
+}
+
+
+
+/* A better looking default horizontal rule */
+hr {
+    display: block;
+    height: 1px;
+    border: 0px;
+    border-top: 1px solid #ccc;
+    margin: 1em 0px;
+    padding: 0px;
+}
+
+
+
+/* ========================================
+MEDIA QUERIES!
+======================================== */
+
+/* New CSS for tablet sizes.
+You can change the pixel number below */
+@media all and (min-width: 768px) {
+	
+	
+	
+	
+} /* closes 768px+ */
+
+
+
+
+/* New CSS for desktop sizes.
+You can change the pixel number below */
+@media all and (min-width: 1024px) {
+	
+	
+	
+	
+} /* closes 1024px+ */
+
+
+
+
+

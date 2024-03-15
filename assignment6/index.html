@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	
+	<meta charset="utf-8">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	
+	<title>Scrolling Effects Demo</title>
+	
+	<link rel="stylesheet" href="css/style.css">	
+	
+</head>
+
+
+<body>
+
+  <div id="container">
+
+
+<header>
+  <h1>Intro to the Black World: What is Blackness?</h1>
+  </header>
+  
+  <div id="sky1"></div>
+  
+<section id="one">
+  <p>
+    What is “Blackness”? Blackness, according to the Merriam-Webster dictionary has several definitions. Blackness is a noun. “(1) Blackness is the quality or state of being black: (a) such as the color black or (b) a gloomy or somber feeling, tone, or character”. “(2) Blackness is also the fact or state of being black: (a) the fact or state of belonging to a population group that has dark pigmentation or (b) the social and cultural identity and experience of black people”. When I think of the word blackness, I think about the latter of the definitions listed above. Due to African and Afro-Atlantic history, our blackness is an extension of our language, shared perceptions, identity, and aesthetic. Blackness embodies the rich history, cultural identity and experience of black people that shapes everything about who we are. This impacts my own understanding of blackness because my blackness (as an African American) to a great degree predominantly stems from the various experiences and traumas our ancestors faced. As well as the history of numerous African languages, cultures, traditions, values, morals, and beliefs all merging and identifying with each other. 
+    </p>
+  </section>
+ 
+
+
+    <div id="sky2">
+    <h1>Welcome!</h1>
+    
+    </div>
+
+    <section id="two">
+  
+    <p>Even though my blackness is an extension of who I am, as a Nigerian-American who grew up in spaces where I was considered “too African” in African American spaces or “too African American” in African spaces (if you get what I mean). I questioned my blackness for a brief second and felt out of place or stuck in the middle because it was tricky navigating those spaces especially other spaces that were predominantly white. What it means to be Colored Me by Zora Neale Hurston is about Zora Hurston documenting her experience as a black woman growing up in an all-black town located in Eatonville, Florida and navigating her identity as a black person outside of Eatonville. In chapter 10, Zora states “I disembarked from the riverboat at Jacksonville, she was no more. It seemed that I had suffered a sea change. I was not Zora of Orange County any more, I was now a little colored girl” (Pg. 531). Later in chapter 10, Zora also states “I feel most colored when I am thrown against a sharp white background” (Pg.532). I think this speaks to the many shared experiences that black people continue to feel in certain places where our blackness and skin tone isn&#39;t welcomed. My blackness is who I am, it&#39;s my identity but what does my blackness mean in a predominantly white space where racism and systemic oppression exist. In white spaces, my blackness doesn&#39;t take up space. My blackness is seen as a threat to them.
+    
+      In conclusion, my understanding of blackness is very broad, but I know what my blackness means to me. It&#39;s the shared experiences, cultures, beliefs, and the history of our ancestors. Therefore, I think a lot of factors contribute to how blackness is defined in certain spaces or in general but one thing I do know is that blackness is the shared identity and culture of black people.</p>
+    </section>
+    
+      <div id="sky3"></div>
+
+
+
+
+  </div><!-- close "container" -->
+  
+  <!-- Link to jQuery on Google CDN-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  
+  
+  <!-- Container for your jQuery code -->
+  <script>
+$(document).ready(function() {
+
+//allows scroll detection in realtime
+$(window).scroll(function() {
+
+//detect scroll position
+var windowPosition = $(window).scrollTop();
+
+if( windowPosition > 700) {
+
+  $('section').css("background", 'black');
+  $('p').css("background", 'lightseagreen');
+  $('p').css("box-shadow",  '10px 10px 20px grey')
+
+}
+
+
+}); //close .scroll
+
+}); //close .ready()
+</script>
+
+</body>
+	
+</html> 
