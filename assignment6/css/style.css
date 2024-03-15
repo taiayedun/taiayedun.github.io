@@ -18,7 +18,8 @@ html {
 
 body {
 	margin:auto;
-	
+	padding:100px;
+	background-color: lightgray;
 }
 
 
@@ -84,7 +85,7 @@ p{
 	font-size:140px;
 	line-height:140px;
 	position:absolute;
-	display: flex;
+	
 	left:50%;
 	top:50%;
 	margin-left:-182px;
