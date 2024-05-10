@@ -72,7 +72,6 @@ main{
 
 
 
-
 /* Tips/Advice*/
 .tipsadvicehp{
 background-color:#6A5BAC;
@@ -90,29 +89,28 @@ padding: 20px;
 }
 
 .sections{
-display: flex;  
-flex-direction: row;
+display: flex; 
+justify-content:space-between; 
 width:auto;
 flex-wrap: wrap;
-
-
-padding-bottom: 20px;
 padding-top: 50px;
 }
 
 .ta1{
-    display: flex;
-    flex-wrap: wrap;
-    
- 
+display: flex;
+flex-wrap: wrap;
+margin-bottom: 40px; 
+justify-content: center;
+
 background-color: #9BB1EB;
 border-radius: 10px;
-height:300px;
+max-height:300px;
 width:550px;
 }
 
 #imgtitleta1{
 display: flex;
+flex-direction: column;
 justify-content: left;
 border-radius: 10px;
    background-color: black;
@@ -130,7 +128,8 @@ width:250px;
     display: flex;
     flex-direction: column;
     justify-content: right;
-    height:300px;
+    margin-top:30px;
+    max-height:300px;
     width:300px;
 } 
 
@@ -142,23 +141,35 @@ width:250px;
 
 #a1Info p{
     text-align: center;
-    height:300px;
+    max-height:300px;
     width:300px; 
 }   
+
+#a1Info button{
+    background-color: #6A5BAC;
+    padding:5px;
+   
+    text-align: center;
+    margin: 10px;
+    margin-left:200px;
+    margin-bottom:15px;
+    margin-top:30px;
+}
 
 
 .ta2{
     display: flex;
     flex-wrap: wrap;
-  
-    background-color: #9BB1EB;
+background-color: #9BB1EB;
    border-radius: 10px;
-   height:300px;
+   max-height:300px;
    width:550px;
+   justify-content: center;
    }
    
    #imgtitleta2{
    display: flex;
+   flex-direction: column;
    justify-content: left;
    border-radius: 10px;
    background-color: black;
@@ -172,12 +183,13 @@ width:250px;
        width:250px;
        }
    
-       #a2Info{
+    #a2Info{
         display: flex;
         flex-direction: column;
         justify-content: right;
-        height:300px;
-        width:300px; 
+        margin-top:30px;
+        max-height:300px;
+        width:300px;
     } 
     
     #a2Info h3{
@@ -188,15 +200,25 @@ width:250px;
     
     #a2Info p{
         text-align: center;
-        height:300px;
+        max-height:300px;
         width:300px; 
     }   
-     
-
+    
+    #a2Info button{
+        background-color: #6A5BAC;
+    padding:5px;
+   
+    text-align: center;
+    margin: 10px;
+    margin-left:200px;
+    margin-bottom:15px;
+    margin-top:50px;
+    }
+    
 
 
 footer{
-    position: absolute;
+    position: static;
     bottom:0;
     width: 100%;
     color: white;
