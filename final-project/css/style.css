@@ -293,31 +293,80 @@ padding:20px;
 /*Research Interview*/
 
 .RI{
-    background-color: #7770BC;
-    width:100%;  
-    text-align:center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap:wrap;
+    justify-content: center;
+    text-align: center;
+    width:100%; 
+    height:auto;
+    padding:10px; 
+  
 }
 
 .RI h1{
     padding-top:50px;
     padding-bottom:30px;
+    text-align: center;
 }
 
 #RI1{
-  padding:10px;  
+  padding:10px; 
+  text-align: center; 
 }
 
-#RI1 p{
-   
+#RI1 h2, h3, p{
+    text-align: center;
+    padding:15px;
 }
 
 #RI1 img{
     padding:10px;
     width:160px; 
     height:auto; 
-    margin-right:20px; 
-    border-radius:50% ;
+    text-align: center;
+    
 }
+
+#RI2{
+    padding:10px; 
+    text-align: center; 
+  }
+  
+  #RI2 h2, h3, p{
+    text-align: center;
+    padding:15px;
+}
+  
+  #RI2 img{
+      padding:10px;
+      width:160px; 
+      height:auto; 
+      text-align: center;   
+  }
+
+  #RI3{
+    padding:10px; 
+    text-align: center; 
+  }
+  
+  #RI3 h2, h3, p{
+    text-align: center;
+    padding:15px;
+}
+  
+  #RI3 img{
+      padding:10px;
+      width:160px; 
+      height:auto; 
+      text-align: center;
+      
+  }
+
+  .qoute{
+    background-color: #7770BC;
+    border-radius: 10px;
+  }
 
 button{
     background-color: #9BB1EB;
