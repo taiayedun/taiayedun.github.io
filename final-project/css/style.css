@@ -6,6 +6,13 @@
     box-sizing: border-box;
 }
 
+.lobster-regular {
+    font-family: "Lobster", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+
 
 /* Basic CSS resets -- leveling slight inconsistencies in browsers */
 html, body {
@@ -52,11 +59,13 @@ nav li{
 nav a:hover{
     color:#6A5BAC;
     padding: 30px;
+    font-family: "Lobster", sans-serif;
     text-decoration: none;
 }
 
  nav a{
     color:white;
+    font-family: "Lobster", sans-serif;
     padding: 20px;
     text-decoration: none;
 }
@@ -84,6 +93,7 @@ width:100%;
 
 .tipsadvicehp h1{
 padding: 20px;
+font-family: "Lobster", sans-serif;
 }
 
 .sections{
@@ -135,7 +145,7 @@ width:250px;
 #a1Info h3{
     margin: 15px;
     text-align: center;
-    
+    font-family: "Lobster", sans-serif;
     }  
 
 #a1Info p{
@@ -186,7 +196,7 @@ width:250px;
     #a2Info h3{
         margin: 15px;
         text-align: center;
-        
+        font-family: "Lobster", sans-serif;
         }  
     
     #a2Info p{
@@ -214,7 +224,7 @@ width:250px;
 margin:auto;
 text-align:center;
 padding:20px;
-
+font-family: "Lobster", sans-serif;
     }
 
     .CE h2{
@@ -222,7 +232,7 @@ padding:5px;
 justify-content: center;
 text-align:center;
 line-height: 50px;
-
+font-family: "Lobster", sans-serif;
     }
 
     .CE h3{
@@ -256,6 +266,7 @@ line-height: 50px;
 padding-top: 20px;
 padding-bottom:50px;
 height:auto;
+font-family: "Lobster", sans-serif;
 text-align: center;
 width:225px;
     }
@@ -271,8 +282,7 @@ width:225px;
     display: flex;
     flex-direction: column;
     flex-wrap:wrap;
-    justify-content: center;
-    text-align: center;
+  text-align: center;
     width:100%; 
     height:auto;
     padding:10px; 
@@ -282,7 +292,7 @@ width:225px;
 .RI h1{
     padding-top:50px;
     padding-bottom:30px;
-    text-align: center;
+    font-family: "Lobster", sans-serif;
 }
 
 #RI1{
@@ -290,10 +300,23 @@ width:225px;
   text-align: center; 
 }
 
-#RI1 h2, h3, p{
+#RI1  p{
     text-align: center;
     padding:15px;
 }
+
+#RI1 h3{
+    font-family: "Lobster", sans-serif;
+    text-align: left;
+    padding:15px;
+}
+
+#RI1 h2{
+    font-family: "Lobster", sans-serif;
+    text-align: center;
+    padding:15px;
+}
+
 
 #RI1 img{
     padding:10px;
@@ -308,16 +331,30 @@ width:225px;
     text-align: center; 
   }
   
-  #RI2 h2, h3, p{
-    text-align: center;
-    padding:15px;
-}
+  #RI2  p{
+      text-align: center;
+      padding:15px;
+  }
+  
+  #RI2 h3{
+      font-family: "Lobster", sans-serif;
+      text-align: left;
+      padding:15px;
+  }
+  
+  #RI2 h2{
+      font-family: "Lobster", sans-serif;
+      text-align: center;
+      padding:15px;
+  }
+  
   
   #RI2 img{
       padding:10px;
       width:160px; 
       height:auto; 
-      text-align: center;   
+      text-align: center;
+      
   }
 
   #RI3{
@@ -325,10 +362,23 @@ width:225px;
     text-align: center; 
   }
   
-  #RI3 h2, h3, p{
-    text-align: center;
-    padding:15px;
-}
+  #RI3  p{
+      text-align: center;
+      padding:15px;
+  }
+  
+  #RI3 h3{
+      font-family: "Lobster", sans-serif;
+      text-align: left;
+      padding:15px;
+  }
+  
+  #RI3 h2{
+      font-family: "Lobster", sans-serif;
+      text-align: center;
+      padding:15px;
+  }
+  
   
   #RI3 img{
       padding:10px;
@@ -345,7 +395,7 @@ width:225px;
 
 button{
     background-color: #9BB1EB;
-    padding:10px;
+    padding:15px;
     border-radius: 5px;
     border-width: 0;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -379,23 +429,27 @@ footer{
     color: white;
     text-align:center;
     padding: 30px;
-    background-color:#9BB1EB;
-    
+    background-color:#9BB1EB; 
 }
 
+.reflection{
+    background-color:#6A5BAC;
+    display: flex; 
+    flex-wrap: wrap;
+    flex-direction: column;
 
+    padding: 20px;
+    width:100%;
+    }
 
-
-
-
-
+.reflection h1{
+        padding-top:50px;
+        padding-bottom:30px;
+        text-align:center;
+        font-family: "Lobster", sans-serif;   
+}
 
 /* Mobile First CSS: we'll design for phone sizes first, then add media queries for tablets and desktop computers later */
-
-
-
-
-
 
 
 /* Class for making YouTube/Vimeo videos responsive */
